@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>정보 — 서버 웜업 & PBN 빌더</title>
+    <meta name="description" content="PBN과 서버 웜업의 진실. 마포에서 당신의 사이트를 구글 1페이지에 올리는 단 한 가지 방법. 게으른 마케터는 가라.">
+    <meta name="keywords" content="PBN 정보, 서버 웜업 가이드, 마포 SEO, 백링크 전략, 티어3 PBN, 구글 랭킹, 사이트 속도 최적화">
+    <link rel="canonical" href="https://sf-t3-1779642675702-251.pages.dev/info">
+    <meta property="og:title" content="정보 — 서버 웜업 & PBN 빌더">
+    <meta property="og:description" content="PBN과 서버 웜업의 진실. 마포에서 당신의 사이트를 구글 1페이지에 올리는 단 한 가지 방법. 게으른 마케터는 가라.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sf-t3-1779642675702-251.pages.dev/info">
+    <meta name="robots" content="index, follow">
+    <style>
+        /* ===== RESET & BASE ===== */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        body {
+            font-family: 'JetBrains Mono', 'Courier New', monospace;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        a {
+            color: #ff2a6d;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s;
+        }
+        a:hover, a:focus {
+            border-bottom-color: #ff2a6d;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* ===== BRUTALIST GRID ===== */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 0px;
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .grid-item {
+            padding: 20px;
+            border: 1px solid #1a1a1a;
+        }
+
+        /* ===== TYPOGRAPHY ===== */
+        h1, h2, h3, h4 {
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            text-transform: uppercase;
+            color: #ff2a6d;
+            text-shadow: 2px 2px 0 #000, 4px 4px 0 rgba(255, 42, 109, 0.3);
+        }
+        h1 {
+            font-size: clamp(3rem, 8vw, 6rem);
+            line-height: 0.9;
+        }
+        h2 {
+            font-size: clamp(2rem, 5vw, 4rem);
+            margin-bottom: 2rem;
+        }
+        h3 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+            max-width: 70ch;
+        }
+        .accent-text {
+            color: #05d9e8;
+            text-shadow: 0 0 10px rgba(5, 217, 232, 0.5);
+        }
+        .highlight {
+            background: #ff2a6d;
+            color: #0a0a0a;
+            padding: 0.1em 0.4em;
+            font-weight: 700;
+        }
+
+        /* ===== HEADER / NAV ===== */
+        .site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid #ff2a6d;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #ff2a6d;
+            letter-spacing: 0.2em;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            letter-spacing: 0.1em;
+            border-bottom: none;
+        }
+        .nav-links a.active {
+            color: #05d9e8;
+            border-bottom: 3px solid #05d9e8;
+        }
+        /* hamburger-menu 패턴 */
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            background: none;
+            border: none;
+            padding: 5px;
+        }
+        .hamburger-menu span {
+            display: block;
+            width: 30px;
+            height: 4px;
+            background: #ff2a6d;
+            transition: all 0.3s;
+        }
+        @media (max-width: 768px) {
+            .hamburger-menu {
+                display: flex;
+            }
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: #0a0a0a;
+                flex-direction: column;
+                padding: 2rem;
+                border-bottom: 2px solid #ff2a6d;
+            }
+            .nav-links.open {
+                display: flex;
+            }
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -20%;
+            width: 70%;
+            height: 150%;
+            background: radial-gradient(circle, rgba(255,42,109,0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .hero-content {
+            grid-column: 1 / span 7;
+            z-index: 1;
+        }
+        .hero-sub {
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            color: #05d9e8;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+        .hero-cta {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 3rem;
+            background: #ff2a6d;
+            color: #0a0a0a;
+            font-weight: 900;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            transition: all 0.1s;
+            box-shadow: 6px 6px 0 #05d9e8;
+        }
+        .hero-cta:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 9px 9px 0 #05d9e8;
+        }
+
+        /* ===== CARDS ===== */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2px;
+            background: #1a1a1a;
+        }
+        .card {
+            background: #0a0a0a;
+            padding: 2rem;
+            border: 2px solid #1a1a1a;
+            position: relative;
+            transition: border-color 0.2s;
+        }
+        .card:hover {
+            border-color: #ff2a6d;
+        }
+        .card h3 {
+            margin-bottom: 1.5rem;
+            font-size: 1.75rem;
+        }
+        .card p {
+            font-size: 1rem;
+            color: #b0b0b0;
+        }
+        .card-number {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #ff2a6d;
+            opacity: 0.2;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            pointer-events: none;
+        }
+
+        /* ===== FAQ ===== */
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            border-bottom: 1px solid #1a1a1a;
+            padding: 1.5rem 0;
+        }
+        .faq-question {
+            font-weight: 700;
+            font-size: 1.25rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-transform: uppercase;
+            color: #ff2a6d;
+        }
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: #05d9e8;
+        }
+        .faq-answer {
+            margin-top: 1rem;
+            color: #b0b0b0;
+            display: none;
+        }
+        .faq-item.open .faq-answer {
+            display: block;
+        }
+        .faq-item.open .faq-question::after {
+            content: '−';
+        }
+
+        /* ===== FOOTER ===== */
+        .site-footer {
+            border-top: 2px solid #ff2a6d;
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+            text-align: center;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .footer-col h4 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: #05d9e8;
+        }
+        .footer-col p, .footer-col a {
+            font-size: 0.875rem;
+            color: #808080;
+        }
+
+        /* ===== UTILITIES ===== */
+        .section {
+            padding: 6rem 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .brutal-border {
+            border: 3px solid #ff2a6d;
+            padding: 2rem;
+            background: transparent;
+        }
+        .neon-glow {
+            box-shadow: 0 0 15px rgba(255, 42, 109, 0.3), 0 0 30px rgba(5, 217, 232, 0.1);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .hero-content {
+                grid-column: 1 / span 12;
+            }
+            .grid-container {
+                padding: 0 10px;
+            }
+        }
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero {
+                padding-top: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="site-header">
+        <nav class="nav-container">
+            <div class="nav-logo">PBN WARMUP</div>
+            <button class="hamburger-menu" aria-label="메뉴 열기" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="/">홈</a></li>
+                <li><a href="/info" class="active">정보</a></li>
+                <li><a href="/services">서비스</a></li>
+                <li><a href="/contact">연락처</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="grid-container" style="width:100%;">
+                <div class="hero-content">
+                    <p class="hero-sub">⚡ 마포 직영 · 010-6279-0862</p>
+                    <h1>PBN의<br>진실을<br>말한다</h1>
+                    <p style="font-size:1.25rem; margin-top:1.5rem;">
+                        서버 웜업은 <span class="highlight">구라</span>가 아니다. <br>
+                        당신이 지금까지 본 PBN은 전부 똥이다. 
+                        마포에서 <span class="accent-text">제대로</span> 굴리는 네트워크를 보여줄게.
+                    </p>
+                    <a href="#faq" class="hero-cta">증거를 보자</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHAT IS PBN (CARD SECTION) -->
+        <section class="section" style="background:#0d0d0d;">
+            <div class="container">
+                <h2 class="text-center" style="margin-bottom:3rem;">이게 PBN이다</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <span class="card-number">01</span>
+                        <h3>도메인 파워</h3>
+                        <p>썩은 드롭
+</body>
+</html>

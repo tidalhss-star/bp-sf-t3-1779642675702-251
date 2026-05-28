@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>블로그 — 서버 웜업 & PBN 빌더</title>
+    <meta name="description" content="마포 PBN 빌더가 말하는 서버 웜업의 진실. 네 사이트가 느린 건 구글 때문이 아니다. 직접 부딪혀라. 010-6279-0862">
+    <meta name="keywords" content="PBN 빌더 블로그, 서버 웜업, 마포, 웹 성능 최적화, 백링크 네트워크, 구글 랭킹, 서버 가속, 티어3 PBN, SEO 전략">
+    <link rel="canonical" href="https://sf-t3-1779642675702-251.pages.dev/blog">
+    <meta property="og:title" content="블로그 — 서버 웜업 & PBN 빌더">
+    <meta property="og:description" content="마포 PBN 빌더가 말하는 서버 웜업의 진실. 네 사이트가 느린 건 구글 때문이 아니다. 직접 부딪혀라.">
+    <meta property="og:type" content="article">
+    <style>
+        /* Brutalist Avant-Garde + KR Neon Void Theme + Hamburger Menu */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        a { color: #ff00ff; text-decoration: underline; text-underline-offset: 4px; }
+        a:hover { color: #00ffff; background: #222; }
+        h1, h2, h3, h4 { font-weight: 900; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-size: 3rem; color: #ff00ff; text-shadow: 4px 4px 0 #00ffff, 6px 6px 0 #000; margin-bottom: 1rem; }
+        h2 { font-size: 2rem; color: #ff00ff; border-left: 8px solid #00ffff; padding-left: 1rem; margin: 2rem 0 1rem; }
+        h3 { font-size: 1.5rem; color: #00ffff; margin: 1.5rem 0 0.5rem; }
+        p { margin-bottom: 1rem; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+
+        /* Header / Navigation */
+        header {
+            background: #111;
+            border-bottom: 4px solid #ff00ff;
+            padding: 1rem 0;
+            position: sticky; top: 0; z-index: 1000;
+        }
+        .header-inner {
+            display: flex; justify-content: space-between; align-items: center;
+            max-width: 1200px; margin: 0 auto; padding: 0 1rem;
+        }
+        .logo {
+            font-size: 1.8rem; font-weight: 900; color: #00ffff;
+            text-transform: uppercase; text-decoration: none;
+        }
+        .logo:hover { color: #ff00ff; background: none; }
+        /* Hamburger Menu Pattern */
+        .nav-toggle { display: none; }
+        .nav-toggle-label {
+            display: none; cursor: pointer; width: 40px; height: 30px;
+            position: relative; z-index: 1001;
+        }
+        .nav-toggle-label span,
+        .nav-toggle-label span::before,
+        .nav-toggle-label span::after {
+            display: block; background: #00ffff; height: 4px; width: 100%;
+            position: absolute; left: 0; transition: all 0.3s;
+        }
+        .nav-toggle-label span { top: 50%; transform: translateY(-50%); }
+        .nav-toggle-label span::before { content: ''; top: -10px; }
+        .nav-toggle-label span::after { content: ''; top: 10px; }
+        #nav-toggle:checked + .nav-toggle-label span { background: transparent; }
+        #nav-toggle:checked + .nav-toggle-label span::before { top: 0; transform: rotate(45deg); background: #ff00ff; }
+        #nav-toggle:checked + .nav-toggle-label span::after { top: 0; transform: rotate(-45deg); background: #ff00ff; }
+        nav {
+            display: flex; gap: 2rem; align-items: center;
+        }
+        nav a {
+            color: #e0e0e0; text-decoration: none; font-weight: bold;
+            font-size: 1.1rem; padding: 0.5rem 0; border-bottom: 2px solid transparent;
+            text-transform: uppercase;
+        }
+        nav a:hover { color: #ff00ff; border-bottom-color: #00ffff; background: none; }
+        nav a.active { color: #00ffff; border-bottom-color: #ff00ff; }
+        @media (max-width: 768px) {
+            .nav-toggle-label { display: block; }
+            nav {
+                display: none; flex-direction: column; gap: 0;
+                position: fixed; top: 0; left: 0; width: 100%; height: 100vh;
+                background: rgba(10,10,10,0.98); padding: 6rem 2rem 2rem; z-index: 1000;
+            }
+            nav a { font-size: 2rem; padding: 1rem 0; border-bottom: 1px solid #333; width: 100%; }
+            #nav-toggle:checked ~ nav { display: flex; }
+        }
+
+        /* Main Content */
+        main { min-height: 80vh; padding: 3rem 0; }
+        .blog-post {
+            background: #151515; border: 4px solid #ff00ff;
+            padding: 2rem; margin-bottom: 3rem;
+            box-shadow: 12px 12px 0 #00ffff;
+        }
+        .blog-post .meta {
+            font-size: 0.9rem; color: #888; border-bottom: 2px dashed #ff00ff;
+            padding-bottom: 0.5rem; margin-bottom: 1.5rem; display: flex; gap: 1rem;
+        }
+        .blog-post .meta span { text-transform: uppercase; }
+        .blog-post blockquote {
+            border-left: 6px solid #ff00ff; margin: 1.5rem 0; padding: 0.5rem 1.5rem;
+            background: #1a1a1a; font-style: italic; color: #00ffff;
+        }
+        .blog-post .highlight {
+            background: #ff00ff; color: #0a0a0a; padding: 0.2rem 0.5rem;
+            font-weight: bold;
+        }
+        .blog-post .cta-box {
+            background: #0a0a0a; border: 2px solid #00ffff; padding: 1.5rem;
+            text-align: center; margin-top: 2rem;
+        }
+        .blog-post .cta-box a {
+            display: inline-block; background: #ff00ff; color: #0a0a0a;
+            padding: 0.8rem 2rem; font-weight: bold; text-transform: uppercase; text-decoration: none;
+            border: 2px solid #00ffff; transition: 0.2s;
+        }
+        .blog-post .cta-box a:hover { background: #00ffff; color: #0a0a0a; border-color: #ff00ff; }
+
+        /* Footer */
+        footer {
+            background: #111; border-top: 4px solid #ff00ff;
+            padding: 2rem 0; text-align: center;
+        }
+        footer p { color: #666; font-size: 0.9rem; }
+        footer a { color: #ff00ff; }
+        footer a:hover { background: none; color: #00ffff; }
+        .footer-phone {
+            font-size: 1.5rem; font-weight: bold; color: #00ffff;
+            margin: 0.5rem 0;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.5rem; }
+            .blog-post { padding: 1rem; box-shadow: 6px 6px 0 #00ffff; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo">서버웜업</a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            <nav>
+                <a href="index.html">홈</a>
+                <a href="services.html">서비스</a>
+                <a href="blog.html" class="active">블로그</a>
+                <a href="contact.html">연락처</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>블로그</h1>
+        <article class="blog-post">
+            <div class="meta">
+                <span>2025-03-30</span>
+                <span>| 마포 직설</span>
+                <span>| 서버 웜업</span>
+            </div>
+            <h2>PBN 빌더가 왜 서버 웜업을 무시하면 망하는가</h2>
+            <p>네 PBN이 구글에 쳐발리는 이유? 서버가 식어있어서다. 마포에서 7년째 PBN을 굴리는 놈으로서 말한다. <strong>서버 웜업은 선택이 아니라 생존이다.</strong></p>
+            <p>“TTFB가 3초?” 니가 게을러서 그래. 마포의 티어3 PBN 빌더들은 이미 알고 있다. 서버 웜업 없이 백링크 네트워크를 키우는 건 모래 위에 성 쌓는 짓이다. 실제로 우리 클라이언트 중 하나는 웜업 전 DR 12에서 웜업 후 DR 39로 점프했다. (물론 다른 요소도 있었지만, 웜업이 트리거였다.)</p>
+            <blockquote>
+                “서버 웜업은 구글 랭킹 시스템을 속이는 게 아니다. 단지 네 서버가 진짜로 빠른 척 연기하는 연습이다. 연기력이 실력이다.”
+            </blockquote>
+            <p>생각해봐라. 구글은 사이트 속도를 랭킹 신호로 쓴다. 네 PBN 사이트가 매일 아침 7시에서야 겨우 깨어난다면? 그 전에 크롤러가 와서 “이 사이트 죽었나?”라고 판단하고 떠난다. 그게 반복되면 니 PBN은 스팸 점수만 쌓인다. <span class="highlight">서버 웜업 = PBN의 생체 리듬</span>이다.</p>
+            <p>우리는 마포에서 24시간 내내 웜업 트래픽을 발생시킨다. 헤드리스 브라우저로 페이지를 미리 로딩하고, 세션을 유지하며, 캐시를 워밍한다. 단순한 핑이 아니다. <strong>진짜 유저처럼 행동하는 봇의 예술</strong>이다. 결과? TTFB 200ms 이하 유지, 크롤링 예산 최적화, PBN 평균 도메인 권위 20% 향상.</p>
+            <p>“근데 너네 비싸잖아?” 하루 5
+</body>
+</html>
