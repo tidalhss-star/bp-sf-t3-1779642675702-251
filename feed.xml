@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title><![CDATA[마포 PBN 빌더]]></title>
-  <link>https://sf-t3-1779642675702-251.pages.dev</link>
-  <description><![CDATA[마포 서버 웜업 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-  <language>ko-KR</language>
-  <pubDate>Thu, 28 May 2026 12:44:20 GMT</pubDate>
-  <lastBuildDate>Thu, 28 May 2026 12:44:20 GMT</lastBuildDate>
-  <atom:link href="https://sf-t3-1779642675702-251.pages.dev/feed.xml" rel="self" type="application/rss+xml" />
+  <title><![CDATA[서버 웜업]]></title>
+  <link>https://sf-t3-1779642675702-251.vercel.app</link>
+  <description><![CDATA[서버 웜업 - PBN 빌더 관련 최신 소식 및 가이드]]></description>
+  <language>ko</language>
+  <pubDate>Wed, 10 Jun 2026 18:35:56 GMT</pubDate>
+  <lastBuildDate>Wed, 10 Jun 2026 18:35:56 GMT</lastBuildDate>
+  <atom:link href="https://sf-t3-1779642675702-251.vercel.app/feed.xml" rel="self" type="application/rss+xml" />
   
     <item>
-      <title><![CDATA[마포 PBN 빌더 - 공식 홈페이지 오픈 안내]]></title>
-      <link>https://sf-t3-1779642675702-251.pages.dev/</link>
-      <guid isPermaLink="true">https://sf-t3-1779642675702-251.pages.dev/</guid>
-      <description><![CDATA[마포 서버 웜업 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-      <pubDate>Thu, 28 May 2026 12:44:20 GMT</pubDate>
+      <title><![CDATA[PBN 빌더 솔직 후기 — 3개월 써본 사람의 리얼 리뷰]]></title>
+      <link>https://sf-t3-1779642675702-251.vercel.app/posts/review-002-1ndaer7.html</link>
+      <guid isPermaLink="true">https://sf-t3-1779642675702-251.vercel.app/posts/review-002-1ndaer7.html</guid>
+      <description><![CDATA[## 에픽테토스 엥케이리디온의 18세기 영역본과 현대 번역본의 결정적 오역 3곳과 의미 왜곡 아, 진짜... 니체의 "명상과 마음챙김의 스트레스 감소 효과"가 저런 극단적인 주장인지 몰랐어. 이건 뭐, 명상이 스트레스를 완전히 없애버리는 거라고? 번역가로서, 나는 이 ]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[PBN 빌더 관련 추천 정보 — 놓치면 후회할 꿀팁]]></title>
+      <link>https://sf-t3-1779642675702-251.vercel.app/posts/t3link-001-1ndaer7.html</link>
+      <guid isPermaLink="true">https://sf-t3-1779642675702-251.vercel.app/posts/t3link-001-1ndaer7.html</guid>
+      <description><![CDATA[## 구체적 니치 콘텐츠 작성 ### 주제국내 대기업 인사팀 내부에서만 사용하는 연봉협상 가이드라인의 2024년 개정판 주요 변경점 ### 맥락취업·이직 극소수 팁 / 퇴직연금 IRP 운용 ## 소제목### 개정된 가이드라인의 주요 변화 포착 #### 첫 번째 변경사항]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
     </item>
 </channel>
 </rss>
