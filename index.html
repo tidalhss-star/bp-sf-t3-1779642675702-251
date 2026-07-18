@@ -1,414 +1,177 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="bpaas-design-system" content="brutalist-avantgarde">
     <meta name="bpaas-design-theme" content="kr-neon-void">
-    <title>홈</title>
-    <meta name="description" content="마포에서 가장 강력한 서버 웜업 & PBN 빌더. 네 사이트를 느리게 만드는 건 구글의 알고리즘이 아니라 니 게으름이다. 지금 전화해라 010-6279-0862.">
-    <meta name="keywords" content="PBN 빌더, 서버 웜업, 마포, 웹 성능 최적화, 백링크 네트워크, 구글 랭킹, 서버 가속, 티어3 PBN">
-    <link rel="canonical" href="https://sf-t3-1779642675702-251.pages.dev/">
-    <meta property="og:title" content="홈 — 서버 웜업 & PBN 빌더">
-    <meta property="og:description" content="마포에서 가장 강력한 서버 웜업 & PBN 빌더. 네 사이트를 느리게 만드는 건 구글의 알고리즘이 아니라 니 게으름이다.">
-    <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%23000'/%3E%3Ctext x='600' y='315' text-anchor='middle' fill='%23ff3b00' font-size='120' font-family='Impact'%3EPBN%3C/text%3E%3C/svg%3E">
-    <meta property="og:url" content="https://sf-t3-1779642675702-251.pages.dev/">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="홈 — 서버 웜업 & PBN 빌더">
-    <meta name="twitter:description" content="마포에서 가장 강력한 서버 웜업 & PBN 빌더. 네 사이트를 느리게 만드는 건 구글의 알고리즘이 아니라 니 게으름이다.">
-    <meta name="twitter:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%23000'/%3E%3Ctext x='600' y='315' text-anchor='middle' fill='%23ff3b00' font-size='120' font-family='Impact'%3EPBN%3C/text%3E%3C/svg%3E">
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "PBN 빌더 & 서버 웜업",
-        "description": "마포 기반의 서버 웜업 및 PBN 구축 전문. 구글의 규칙을 따르지 말고, 규칙을 만들어라.",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "마포",
-            "addressRegion": "서울",
-            "addressCountry": "KR"
-        },
-        "telephone": "+82-10-6279-0862",
-        "url": "https://sf-t3-1779642675702-251.pages.dev/",
-        "sameAs": []
-    }
-    </script>
+    <title>블로그 — 서버 웜업 & PBN 빌더</title>
+    <meta name="description" content="마포 PBN 빌더가 말하는 서버 웜업의 진실. 네 사이트가 느린 건 구글 때문이 아니다. 직접 부딪혀라. 010-6279-0862">
+    <meta name="keywords" content="PBN 빌더 블로그, 서버 웜업, 마포, 웹 성능 최적화, 백링크 네트워크, 구글 랭킹, 서버 가속, 티어3 PBN, SEO 전략">
+    <link rel="canonical" href="https://sf-t3-1779642675702-251.maphoshirts.xyz/">
+    <meta property="og:title" content="블로그 — 서버 웜업 & PBN 빌더">
+    <meta property="og:description" content="마포 PBN 빌더가 말하는 서버 웜업의 진실. 네 사이트가 느린 건 구글 때문이 아니다. 직접 부딪혀라.">
+    <meta property="og:type" content="article">
     <style>
-        /* ----- RESET & BASE ----- */
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            font-size: 16px;
-            scroll-behavior: smooth;
-        }
+        /* Brutalist Avant-Garde + KR Neon Void Theme + Hamburger Menu */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            background: #000;
-            color: #fff;
-            font-family: Impact, system-ui, 'Arial Black', sans-serif;
-            line-height: 1.2;
-            min-height: 100vh;
-            padding: 72px;
-            padding-bottom: 0;
-            display: flex;
-            flex-direction: column;
-            gap: 48px;
+            font-family: 'Courier New', Courier, monospace;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
         }
-        /* ----- TYPOGRAPHY ----- */
-        h1, h2, h3, h4 {
-            font-weight: normal;
-            text-transform: uppercase;
-            letter-spacing: 0.02em;
-        }
-        h1 {
-            font-size: clamp(3.5rem, 12vw, 6rem);
-            line-height: 0.9;
-            margin-bottom: 0.5rem;
-        }
-        h2 {
-            font-size: clamp(2.5rem, 8vw, 4rem);
-            margin-bottom: 1rem;
-        }
-        h3 {
-            font-size: 1.8rem;
-        }
-        p, li, blockquote {
-            font-family: system-ui, sans-serif;
-            font-weight: 300;
-            font-size: 1.1rem;
-            line-height: 1.5;
-            max-width: 70ch;
-        }
-        a {
-            color: #ff3b00;
-            text-decoration: underline wavy 2px;
-            transition: color 0.1s;
-        }
-        a:hover {
-            color: #fff;
-            background: #ff3b00;
-        }
-        strong {
-            color: #ff3b00;
-            font-weight: normal;
-        }
-        /* ----- BORDERS & SKEW ----- */
-        .brutal-border {
-            border: 4px solid #ff3b00;
-            padding: 24px;
-            display: inline-block;
-        }
-        .skew {
-            transform: skew(-5deg);
-            display: inline-block;
-        }
-        .skew-neg {
-            transform: skew(5deg);
-        }
-        .rotate-2 {
-            transform: rotate(1.5deg);
-        }
-        /* ----- LAYOUT ----- */
+        a { color: #ff00ff; text-decoration: underline; text-underline-offset: 4px; }
+        a:hover { color: #00ffff; background: #222; }
+        h1, h2, h3, h4 { font-weight: 900; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-size: 3rem; color: #ff00ff; text-shadow: 4px 4px 0 #00ffff, 6px 6px 0 #000; margin-bottom: 1rem; }
+        h2 { font-size: 2rem; color: #ff00ff; border-left: 8px solid #00ffff; padding-left: 1rem; margin: 2rem 0 1rem; }
+        h3 { font-size: 1.5rem; color: #00ffff; margin: 1.5rem 0 0.5rem; }
+        p { margin-bottom: 1rem; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+
+        /* Header / Navigation */
         header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 24px 0;
-            border-bottom: 4px solid #ff3b00;
-            margin-bottom: 24px;
-            position: relative;
+            background: #111;
+            border-bottom: 4px solid #ff00ff;
+            padding: 1rem 0;
+            position: sticky; top: 0; z-index: 1000;
+        }
+        .header-inner {
+            display: flex; justify-content: space-between; align-items: center;
+            max-width: 1200px; margin: 0 auto; padding: 0 1rem;
         }
         .logo {
-            font-size: 2.2rem;
-            color: #ff3b00;
-            letter-spacing: -0.02em;
+            font-size: 1.8rem; font-weight: 900; color: #00ffff;
+            text-transform: uppercase; text-decoration: none;
         }
-        .logo span {
-            color: #fff;
-            display: block;
-            font-size: 0.6rem;
-            letter-spacing: 0.3em;
-            margin-top: -8px;
+        .logo:hover { color: #ff00ff; background: none; }
+        /* Hamburger Menu Pattern */
+        .nav-toggle { display: none; }
+        .nav-toggle-label {
+            display: none; cursor: pointer; width: 40px; height: 30px;
+            position: relative; z-index: 1001;
         }
-        /* ----- NAVIGATION (hamburger CSS) ----- */
-        #nav-toggle {
-            display: none;
+        .nav-toggle-label span,
+        .nav-toggle-label span::before,
+        .nav-toggle-label span::after {
+            display: block; background: #00ffff; height: 4px; width: 100%;
+            position: absolute; left: 0; transition: all 0.3s;
         }
-        .nav-label {
-            display: none;
-            cursor: pointer;
-            width: 48px;
-            height: 48px;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 6px;
-            background: #ff3b00;
-            padding: 8px;
-            border-radius: 0;
-            border: 3px solid #fff;
-        }
-        .nav-label span {
-            display: block;
-            width: 30px;
-            height: 4px;
-            background: #000;
-            transition: 0.2s;
-        }
-        #nav-toggle:checked + .nav-label span:nth-child(1) {
-            transform: rotate(45deg) translate(6px, 6px);
-        }
-        #nav-toggle:checked + .nav-label span:nth-child(2) {
-            opacity: 0;
-        }
-        #nav-toggle:checked + .nav-label span:nth-child(3) {
-            transform: rotate(-45deg) translate(6px, -6px);
-        }
-        nav ul {
-            display: flex;
-            gap: 32px;
-            list-style: none;
-            font-size: 1.4rem;
+        .nav-toggle-label span { top: 50%; transform: translateY(-50%); }
+        .nav-toggle-label span::before { content: ''; top: -10px; }
+        .nav-toggle-label span::after { content: ''; top: 10px; }
+        #nav-toggle:checked + .nav-toggle-label span { background: transparent; }
+        #nav-toggle:checked + .nav-toggle-label span::before { top: 0; transform: rotate(45deg); background: #ff00ff; }
+        #nav-toggle:checked + .nav-toggle-label span::after { top: 0; transform: rotate(-45deg); background: #ff00ff; }
+        nav {
+            display: flex; gap: 2rem; align-items: center;
         }
         nav a {
-            color: #fff;
-            text-decoration: none;
-            border-bottom: 3px solid transparent;
-            padding-bottom: 4px;
-            transition: 0.1s;
+            color: #e0e0e0; text-decoration: none; font-weight: bold;
+            font-size: 1.1rem; padding: 0.5rem 0; border-bottom: 2px solid transparent;
+            text-transform: uppercase;
         }
-        nav a:hover {
-            border-bottom-color: #ff3b00;
-            background: none;
-            color: #ff3b00;
+        nav a:hover { color: #ff00ff; border-bottom-color: #00ffff; background: none; }
+        nav a.active { color: #00ffff; border-bottom-color: #ff00ff; }
+        @media (max-width: 768px) {
+            .nav-toggle-label { display: block; }
+            nav {
+                display: none; flex-direction: column; gap: 0;
+                position: fixed; top: 0; left: 0; width: 100%; height: 100vh;
+                background: rgba(10,10,10,0.98); padding: 6rem 2rem 2rem; z-index: 1000;
+            }
+            nav a { font-size: 2rem; padding: 1rem 0; border-bottom: 1px solid #333; width: 100%; }
+            #nav-toggle:checked ~ nav { display: flex; }
         }
-        /* ----- HERO ----- */
-        #hero {
-            padding: 120px 0;
-            margin: 0 -72px;
-            padding-left: 72px;
-            padding-right: 72px;
-            background: 
-                linear-gradient(45deg, #ff3b00 0%, #000 40%, #000 60%, #ff3b00 100%);
-            border-top: 4px solid #fff;
-            border-bottom: 4px solid #fff;
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            gap: 48px;
+
+        /* Main Content */
+        main { min-height: 80vh; padding: 3rem 0; }
+        .blog-post {
+            background: #151515; border: 4px solid #ff00ff;
+            padding: 2rem; margin-bottom: 3rem;
+            box-shadow: 12px 12px 0 #00ffff;
         }
-        #hero::after {
-            content: '';
-            position: absolute;
-            top: -20%;
-            right: -10%;
-            width: 300px;
-            height: 300px;
-            background: repeating-linear-gradient(45deg, #ff3b00 0px, #ff3b00 8px, transparent 8px, transparent 16px);
-            transform: rotate(20deg);
-            opacity: 0.3;
-            pointer-events: none;
+        .blog-post .meta {
+            font-size: 0.9rem; color: #888; border-bottom: 2px dashed #ff00ff;
+            padding-bottom: 0.5rem; margin-bottom: 1.5rem; display: flex; gap: 1rem;
         }
-        .hero-text {
-            max-width: 100%;
-            z-index: 1;
+        .blog-post .meta span { text-transform: uppercase; }
+        .blog-post blockquote {
+            border-left: 6px solid #ff00ff; margin: 1.5rem 0; padding: 0.5rem 1.5rem;
+            background: #1a1a1a; font-style: italic; color: #00ffff;
         }
-        .hero-text h1 {
-            font-size: clamp(4rem, 15vw, 8rem);
-            line-height: 0.85;
-            margin-bottom: 24px;
-            text-shadow: 8px 8px 0 #ff3b00, -4px -4px 0 #fff;
-        }
-        .hero-text p {
-            font-size: 1.4rem;
-            background: #000;
-            padding: 16px 24px;
-            display: inline-block;
-            border: 4px solid #fff;
-        }
-        .cta-button {
-            display: inline-block;
-            background: #ff3b00;
-            color: #000;
-            padding: 20px 48px;
-            font-size: 1.8rem;
+        .blog-post .highlight {
+            background: #ff00ff; color: #0a0a0a; padding: 0.2rem 0.5rem;
             font-weight: bold;
-            text-decoration: none;
-            border: 4px solid #fff;
-            transform: skew(-6deg);
-            transition: 0.1s;
-            letter-spacing: 0.05em;
-            margin-top: 24px;
         }
-        .cta-button:hover {
-            background: #fff;
-            color: #000;
-            border-color: #ff3b00;
-            transform: skew(0deg);
+        .blog-post .cta-box {
+            background: #0a0a0a; border: 2px solid #00ffff; padding: 1.5rem;
+            text-align: center; margin-top: 2rem;
         }
-        /* ----- SECTIONS ----- */
-        section {
-            padding: 72px 0;
-            margin: 0 -72px;
-            padding-left: 72px;
-            padding-right: 72px;
-            border-bottom: 4px solid #ff3b00;
-            position: relative;
+        .blog-post .cta-box a {
+            display: inline-block; background: #ff00ff; color: #0a0a0a;
+            padding: 0.8rem 2rem; font-weight: bold; text-transform: uppercase; text-decoration: none;
+            border: 2px solid #00ffff; transition: 0.2s;
         }
-        section:last-of-type {
-            border-bottom: none;
-        }
-        .section-gap {
-            margin-top: 120px;
-        }
-        .section-title {
-            font-size: 3rem;
-            border-bottom: 6px solid #ff3b00;
-            display: inline-block;
-            padding-bottom: 8px;
-            margin-bottom: 48px;
-        }
-        /* ----- REVIEW CARDS ----- */
-        .review-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 48px;
-        }
-        .review-card {
-            background: #111;
-            border: 4px solid #fff;
-            padding: 32px 24px;
-            transform: rotate(1deg);
-            transition: 0.1s;
-            position: relative;
-        }
-        .review-card:nth-child(even) {
-            transform: rotate(-1.5deg);
-        }
-        .review-card:hover {
-            border-color: #ff3b00;
-            background: #000;
-            transform: rotate(0deg) scale(1.02);
-        }
-        .review-card .author {
-            font-size: 1.6rem;
-            color: #ff3b00;
-            margin-bottom: 8px;
-        }
-        .review-card .date {
-            font-size: 0.9rem;
-            color: #888;
-            font-family: system-ui;
-            margin-bottom: 12px;
-        }
-        .stars {
-            color: #ff3b00;
-            font-size: 1.6rem;
-            letter-spacing: 4px;
-        }
-        .review-card blockquote {
-            font-family: system-ui;
-            font-style: italic;
-            border-left: 4px solid #ff3b00;
-            padding-left: 16px;
-            margin-top: 16px;
-            color: #ddd;
-        }
-        /* ----- FEATURES / OTHER SECTIONS ----- */
-        .feature-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 48px;
-            list-style: none;
-        }
-        .feature-item {
-            border: 4px solid #fff;
-            padding: 32px;
-            background: #0a0a0a;
-            transform: skew(-3deg);
-        }
-        .feature-item h3 {
-            font-size: 2rem;
-            color: #ff3b00;
-            margin-bottom: 16px;
-        }
-        .feature-item p {
-            font-size: 1rem;
-        }
-        /* ----- CALL TO ACTION (phone) ----- */
-        .phone-cta {
-            background: #ff3b00;
-            color: #000;
-            border: 4px solid #fff;
-            padding: 48px;
-            text-align: center;
-            font-size: 2.5rem;
-            transform: rotate
+        .blog-post .cta-box a:hover { background: #00ffff; color: #0a0a0a; border-color: #ff00ff; }
 
+        /* Footer */
+        footer {
+            background: #111; border-top: 4px solid #ff00ff;
+            padding: 2rem 0; text-align: center;
+        }
+        footer p { color: #666; font-size: 0.9rem; }
+        footer a { color: #ff00ff; }
+        footer a:hover { background: none; color: #00ffff; }
+        .footer-phone {
+            font-size: 1.5rem; font-weight: bold; color: #00ffff;
+            margin: 0.5rem 0;
+        }
 
-
-
-
-
-
-<!-- PBN Recent Posts Feed Section -->
-<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
-  <div style="max-width:1100px;margin:0 auto">
-    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
-      
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>💡 GUIDE</span>
-          <time datetime="2026-06-15">2026-06-15</time>
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.5rem; }
+            .blog-post { padding: 1rem; box-shadow: 6px 6px 0 #00ffff; }
+        }
+    </style>
+  <meta property="og:url" content="https://sf-t3-1779642675702-251.maphoshirts.xyz/">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo">서버웜업</a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            <nav>
+                <a href="index.html">홈</a>
+                <a href="services.html">서비스</a>
+                <a href="blog.html" class="active">블로그</a>
+                <a href="contact.html">연락처</a>
+            </nav>
         </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">창작한 제목</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">### 포스트 DNA afff2f38 아, 진짜... "전직 인사팀장" 시점에서 "서류 통과율 90% 이력서의 공통된 거짓말 패턴"이라는 갈등을 중심으로 서사(narrative)를 전개하는 것이 필요합니다. 그럼 먼저 주제에 대해 좀 더 구체적으로 접근해볼게요. ###</p>
-      </div>
-      <a href="posts/guide-001-15pbroe.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-15">2026-06-15</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">PBN 빌더 처음 알아볼 때 실제로 많이 묻는 질문 5가지</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">### 제목: 창작한 제목: "국세청 전산 오류로 인해 ISA 계좌에서 해외 ETF TR 상품의 과세이연 혜택 미적용 사례와 재신청 방법" #### 1. 검색 의도 대응 - 어떤 펀드 구조에서 ISA 계좌의 과세이연 혜택이 미적용되는지에 대해 궁금합니다.- 신용카드 실</p>
-      </div>
-      <a href="posts/qa-002-15pbroe.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-10">2026-06-10</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">PBN 빌더 솔직 후기 — 3개월 써본 사람의 리얼 리뷰</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">## 에픽테토스 엥케이리디온의 18세기 영역본과 현대 번역본의 결정적 오역 3곳과 의미 왜곡 아, 진짜... 니체의 "명상과 마음챙김의 스트레스 감소 효과"가 저런 극단적인 주장인지 몰랐어. 이건 뭐, 명상이 스트레스를 완전히 없애버리는 거라고? 번역가로서, 나는 이 </p>
-      </div>
-      <a href="posts/review-002-1ndaer7.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-10">2026-06-10</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">PBN 빌더 관련 추천 정보 — 놓치면 후회할 꿀팁</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">## 구체적 니치 콘텐츠 작성 ### 주제국내 대기업 인사팀 내부에서만 사용하는 연봉협상 가이드라인의 2024년 개정판 주요 변경점 ### 맥락취업·이직 극소수 팁 / 퇴직연금 IRP 운용 ## 소제목### 개정된 가이드라인의 주요 변화 포착 #### 첫 번째 변경사항</p>
-      </div>
-      <a href="posts/t3link-001-1ndaer7.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    </div>
-  </div>
-</section>
+    </header>
+
+    <main class="container">
+        <h1>블로그</h1>
+        <article class="blog-post">
+            <div class="meta">
+                <span>2025-03-30</span>
+                <span>| 마포 직설</span>
+                <span>| 서버 웜업</span>
+            </div>
+            <h2>PBN 빌더가 왜 서버 웜업을 무시하면 망하는가</h2>
+            <p>네 PBN이 구글에 쳐발리는 이유? 서버가 식어있어서다. 마포에서 7년째 PBN을 굴리는 놈으로서 말한다. <strong>서버 웜업은 선택이 아니라 생존이다.</strong></p>
+            <p>“TTFB가 3초?” 니가 게을러서 그래. 마포의 티어3 PBN 빌더들은 이미 알고 있다. 서버 웜업 없이 백링크 네트워크를 키우는 건 모래 위에 성 쌓는 짓이다. 실제로 우리 클라이언트 중 하나는 웜업 전 DR 12에서 웜업 후 DR 39로 점프했다. (물론 다른 요소도 있었지만, 웜업이 트리거였다.)</p>
+            <blockquote>
+                “서버 웜업은 구글 랭킹 시스템을 속이는 게 아니다. 단지 네 서버가 진짜로 빠른 척 연기하는 연습이다. 연기력이 실력이다.”
+            </blockquote>
+            <p>생각해봐라. 구글은 사이트 속도를 랭킹 신호로 쓴다. 네 PBN 사이트가 매일 아침 7시에서야 겨우 깨어난다면? 그 전에 크롤러가 와서 “이 사이트 죽었나?”라고 판단하고 떠난다. 그게 반복되면 니 PBN은 스팸 점수만 쌓인다. <span class="highlight">서버 웜업 = PBN의 생체 리듬</span>이다.</p>
+            <p>우리는 마포에서 24시간 내내 웜업 트래픽을 발생시킨다. 헤드리스 브라우저로 페이지를 미리 로딩하고, 세션을 유지하며, 캐시를 워밍한다. 단순한 핑이 아니다. <strong>진짜 유저처럼 행동하는 봇의 예술</strong>이다. 결과? TTFB 200ms 이하 유지, 크롤링 예산 최적화, PBN 평균 도메인 권위 20% 향상.</p>
+            <p>“근데 너네 비싸잖아?” 하루 5
 </body>
 </html>
